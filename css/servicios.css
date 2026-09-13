@@ -1,0 +1,208 @@
+/* =========================
+   SERVICIOS PAGE
+========================= */
+.servicios-header .logo {
+  width: 180px;
+  height: auto;
+  display: block;
+}
+
+.servicios-body {
+  background: #050505;
+  color: #fff;
+}
+
+.servicios-header {
+  background: #050505;
+}
+
+.servicios-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(0, 153, 255, 0.12),
+      transparent 35%
+    ),
+    #050505;
+
+  padding: 40px 5% 90px;
+}
+
+.servicios-container {
+  width: min(1180px, 100%);
+  margin: auto;
+}
+
+/* INTRO */
+
+.servicios-intro {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 40px 0 70px;
+  text-align: center;
+}
+
+.section-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #59c8ff;
+  margin-bottom: 22px;
+}
+
+.servicios-title {
+  font-size: clamp(44px, 7vw, 88px);
+  text-align: center;
+  line-height: 1;
+  letter-spacing: -3px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.servicios-title span {
+  display: block;
+  font-weight: 300;
+  color: #c8c8c8;
+}
+
+.servicios-title strong {
+  display: block;
+  margin-top: 16px;
+  color: #59c8ff;
+  font-weight: 700;
+}
+
+.servicios-description {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* LISTA */
+
+.servicios-list {
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.servicio-item {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 28px;
+  padding: 42px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  transition: 0.3s ease;
+}
+
+.servicio-item:hover {
+  padding-left: 14px;
+}
+
+.servicio-numero {
+  font-size: 16px;
+  font-weight: 700;
+  color: #59c8ff;
+  letter-spacing: 2px;
+}
+
+.servicio-content h2 {
+  font-size: clamp(26px, 4vw, 46px);
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+.servicio-content p {
+  max-width: 760px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #aaa;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .servicios-page {
+    padding-top: 20px;
+  }
+
+  .servicios-title {
+    letter-spacing: -2px;
+  }
+
+  .servicio-item {
+    grid-template-columns: 60px 1fr;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .servicios-header .logo {
+    width: 150px;
+  }
+
+  .servicios-page {
+    padding: 15px 6% 70px;
+  }
+
+  .servicios-intro {
+    padding: 25px 0 50px;
+  }
+
+  .section-label {
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 2.2px;
+    margin-bottom: 18px;
+  }
+
+  .servicios-title {
+    font-size: 39px;
+    line-height: 1.05;
+    letter-spacing: -1px;
+    margin-bottom: 28px;
+  }
+
+  .servicios-title strong {
+    margin-top: 16px;
+    font-size: 0.92em;
+  }
+
+  .servicios-description {
+    font-size: 16px;
+    line-height: 1.65;
+    margin-bottom: 14px;
+  }
+
+  .servicios-list {
+    margin-top: 18px;
+  }
+
+  .servicio-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 32px 0;
+  }
+
+  .servicio-numero {
+    font-size: 14px;
+  }
+
+  .servicio-content h2 {
+    font-size: 29px;
+  }
+
+  .servicio-content p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .servicio-item:hover {
+    padding-left: 0;
+  }
+}
